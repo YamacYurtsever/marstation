@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="styles/general.css" rel="stylesheet">
+    <link href="styles/menu.css" rel="stylesheet">
+
+    <script src="scripts/general.js"></script>
+    <script src="scripts/menu.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@300&display=swap" rel="stylesheet">
+
+    <title>Pizzas</title>
+</head>
+
+<body>
+    <header>
+        <div id="navbar">
+            <div id="navbar-1">
+                <p>Home</p>
+            </div>
+            <div id="navbar-2">
+                <p>Marstation</p>
+            </div>
+            <div id="navbar-3">
+                <p><strong>Location:</strong> Bluemoon Street, Block: -25, Eastern Settlement, Mars</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="name">Yo Bro Pizza</div>
+                <div class="price"><i>Price: <span>5</span>$</i></div>
+                <div class="add"><button onclick="addOrder(this.parentElement.parentElement)">+</button></div>
+            </div>
+            <div class="row">
+                <div class="name">Hawaian Prince Pizza</div>
+                <div class="price"><i>Price: <span>500</span>$</i></div>
+                <div class="add"><button onclick="addOrder(this.parentElement.parentElement)">+</button></div>
+            </div>
+            <div class="row">
+                <div class="name">Hell Fire Pizza</div>
+                <div class="price"><i>Price: <span>15</span>$</i></div>
+                <div class="add"><button onclick="addOrder(this.parentElement.parentElement)">+</button></div>
+            </div>
+            <div class="row">
+                <div class="name">Chicken Barbeque Pizza</div>
+                <div class="price"><i>Price: <span>8</span>$</i></div>
+                <div class="add"><button onclick="addOrder(this.parentElement.parentElement)">+</button></div>
+            </div>
+        </div>
+
+        <div id="order"></div>
+        <div id="order-button-container"><button onclick="placeOrder()">Place Order</button></div>
+    </main>
+</body>
+
+</html>

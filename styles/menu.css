@@ -1,0 +1,105 @@
+/* CONTAINER */
+.container {
+    width: 40%;
+    height: auto;
+    margin: 50px auto;
+    background-color: white;
+    box-shadow: 0 0 5px 5px orange;
+}
+
+.container > :not(:last-child) {
+    border-bottom: 3px solid orange;
+}
+
+.row {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.row > :not(:last-child) {
+    height: 70px;
+    border-right: 3px dotted orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name {
+    flex-basis: 50%;
+    font-size: 2.5rem;
+}
+
+.price {
+    flex-basis: 30%;
+    font-size: 1.5rem;
+}
+
+.add {
+    flex-basis: 20%;
+    add
+}
+
+.add button {
+    width: 30px;
+    height: 30px;
+}
+
+.add button:hover, #order-button-container button:hover {
+    cursor: pointer;
+}
+
+/* ORDER */
+#order {
+    width: 40%;
+    height: auto;
+    margin: 0 auto;
+    font-size: 3rem;
+    color: white;
+}
+
+#order-button-container {
+    width: 40%;
+    height: auto;
+    margin: 30px auto;
+    display: flex;
+}
+
+#order-button-container button {
+    width: 120px;
+    height: 50px;
+    font-size: 2rem;
+    font-family: 'Handjet', cursive;
+    font-weight: 600;
+    letter-spacing: 0.175rem;
+    border: none;
+    box-shadow: 0 0 3px 3px #7CF4FA;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 800px) {
+    .container {
+        width: 80%;
+    }
+
+    .name {
+        font-size: 2rem;
+    }
+
+    .price {
+        font-size: 1.25rem;
+    }
+
+    #order {
+        width: 80%;
+        font-size: 2rem;
+    }
+
+    #order-button-container {
+        justify-content: center;
+    }
+}
